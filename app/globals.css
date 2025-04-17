@@ -12,6 +12,7 @@ body {
   /* background-image: linear-gradient(90deg, #BD24DF 0%, #2D6ADE 97.15%); */
   background-image: linear-gradient(90deg, rgba(189, 36, 223, 0.5) 0%, rgba(45, 106, 222, 0.5) 97.15%);
   background-blend-mode: overlay;
+  overflow-x: hidden;
 }
 
 html {
@@ -143,7 +144,7 @@ html:not([data-scroll="0"]) .navbar {
   filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.1));
   transform: scale(1.05);
   border: 1px solid #BD24DF;
-  height: 360px;
+  /* height: 360px; */
 }
 
 .hides {
@@ -178,7 +179,7 @@ html:not([data-scroll="0"]) .navbar {
 }
 
 .gg {
-  background: linear-gradient(90deg, #BD24DF 0%, #2D6ADE 97.15%);
+  background: linear-gradient(45deg, #360042 0%, #001d52 97.15%);
 }
 
 /* Simple Section */

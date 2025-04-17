@@ -78,7 +78,7 @@ const Navbar = () => {
 
                         {/* DRAWER ICON */}
 
-                        <div className='block lg:hidden'>
+                        <div className='block lg:hidden cursor-pointer'>
                             <Bars3Icon className="block h-6 w-6 text-white" aria-hidden="true" onClick={() => setIsOpen(true)} />
                         </div>
 

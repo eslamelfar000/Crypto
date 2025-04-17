@@ -37,18 +37,18 @@ const Faq = () => {
                         <div className="w-full px-4 pt-16">
 
                             {faqdata.map((items, i) => (
-                                <div className="mx-auto w-full max-w-5xl rounded-2xl bg-blue py-8 px-6 mb-5" key={i}>
+                                <div className="mx-auto w-full max-w-5xl rounded-2xl bg-blue py-4 px-3 mb-5" key={i}>
                                     <Disclosure>
                                         {({ open }) => (
                                             <>
-                                                <Disclosure.Button className="flex w-full justify-between rounded-lg text-offwhite sm:px-4 sm:py-2 text-left md:text-2xl font-medium">
+                                                <Disclosure.Button className="flex w-full justify-between rounded-lg text-offwhite sm:px-4 sm:py-2 text-left md:text-xl font-medium">
                                                     <span>{items.heading}</span>
                                                     <ChevronUpIcon
                                                         className={`${open ? 'rotate-180 transform' : ''
                                                             } h-5 w-5 text-purple-500`}
                                                     />
                                                 </Disclosure.Button>
-                                                <Disclosure.Panel className="px-4 pt-4 pb-2 md:text-lg text-bluish font-normal opacity-50">{items.subheading}</Disclosure.Panel>
+                                                <Disclosure.Panel className="px-4 pt-4 pb-2 md:text-sm text-bluish font-normal opacity-50">{items.subheading}</Disclosure.Panel>
                                             </>
                                         )}
                                     </Disclosure>

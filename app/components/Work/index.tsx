@@ -51,8 +51,8 @@ const Work = () => {
                                 <Image src={'/images/Work/bg-arrow.svg'} alt="arrow-bg" width={85} height={35} />
                             </div>
                             <h3 className='text-2xl text-offwhite font-semibold text-center mt-8'>{items.heading}</h3>
-                            <p className='text-base font-normal text-bluish text-center mt-2'>{items.subheading}</p>
-                            <span className="text-base font-normal m-0 text-bluish text-center hides">{items.hiddenpara}</span>
+                            <p className='text-sm font-normal text-bluish text-center mt-2'>{items.subheading}</p>
+                            {/* <span className="text-base font-normal m-0 text-bluish text-center">{items.hiddenpara}</span> */}
                         </div>
                     ))}
 

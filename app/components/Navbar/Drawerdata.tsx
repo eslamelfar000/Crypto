@@ -24,21 +24,24 @@ const Data = () => {
             <div className="flex-1 space-y-4 py-1">
                 <div className="sm:block">
                     <div className="space-y-1 px-5 pt-2 pb-3">
-                        {navigation.map((item) => (
-                            <Link
+                        <ul className="space-y-3 mb-10">
+                            {navigation.map((item) => (
+                            <li className={`text-white hover:bg-gray-700 hover:text-gray-400`}>
+                                <Link
                                 key={item.name}
                                 href={item.href}
-                                className={classNames(
-                                    item.current ? 'bg-gray-900 text-purple' : 'text-black hover:bg-gray-700 hover:text-purple',
-                                    'block  py-2 rounded-md text-base font-medium'
-                                )}
+                                className={`
+                                    block py-2 rounded-md text-base font-medium
+                                `}
                                 aria-current={item.current ? 'page' : undefined}
                             >
                                 {item.name}
                             </Link>
+                            </li>
                         ))}
+                        </ul>
                         <div className="mt-4"></div>
-                        <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
+                        <button className="bg-white text-navyblue w-full hover:text-white hover:bg-black font-medium py-3 px-4 rounded transition duration-300">
                             Connect Wallet
                         </button>
                     </div>
