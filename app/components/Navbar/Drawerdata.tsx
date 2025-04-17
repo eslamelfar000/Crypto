@@ -26,9 +26,8 @@ const Data = () => {
                     <div className="space-y-1 px-5 pt-2 pb-3">
                         <ul className="space-y-3 mb-10">
                             {navigation.map((item) => (
-                            <li className={`text-white hover:bg-gray-700 hover:text-gray-400`}>
+                            <li key={item.name} className={`text-white hover:bg-gray-700 hover:text-gray-400`}>
                                 <Link
-                                key={item.name}
                                 href={item.href}
                                 className={`
                                     block py-2 rounded-md text-base font-medium
